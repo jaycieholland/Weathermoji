@@ -1,0 +1,18 @@
+html {
+  box-sizing: border-box;
+  font-family: 'helvetica neue';
+  font-size: 20px;
+  font-weight: 200;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
