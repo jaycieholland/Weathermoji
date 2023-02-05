@@ -2,6 +2,8 @@
 const button = document.querySelector('.cityState')
 const api = "17ca0a35a1b1a9c6f5ac02fd133a0961";
 let currentEmoji;
+// Get the input field
+const input = document.getElementById("citySearch");
 
 const getGeo = (city) => {
 	// API URL
@@ -77,7 +79,6 @@ const handleSearch = () => {
 }
 button.addEventListener('click', handleSearch);
 
-
-
-
-//haze clouds
+input.addEventListener("keypress", event => {
+  if (event.key === "Enter") handleSearch();
+});

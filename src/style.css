@@ -1,17 +1,8 @@
 html {
   box-sizing: border-box;
   font-family: 'helvetica neue';
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 200;
-}
-label {
-  display: block;
-  font: 1rem 'Fira Sans', sans-serif;
-}
-
-input,
-label {
-  margin: 0.4rem 0;
 }
 
 *,
@@ -19,34 +10,81 @@ label {
 *:after {
   box-sizing: inherit;
 }
-.page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  height: 100vh;
+
+.page {
+  background-image: linear-gradient(rgb(0, 84, 186), rgba(1, 200, 255, 1));
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
   display: flex;
+  justify-content: start;
+  padding-top: 8rem;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background: linear-gradient(rgb(123, 184, 104), rgb(13, 87, 10));
-  font-size: 2rem;
-  font-family: sans-serif;
-  color: rgb(7, 9, 10);
 }
-.container {
-  height: 20rem;
-  width: 15rem;
-  background-color: rgb(152, 228, 165);
+
+.emoji {
+  font-size: 15rem;
+  margin-top: 16rem;
+}
+
+#citySearch {
+  padding: 2px 24px;
+  font-size: 1rem;
+  border-radius: 24px;
+  height: 48px;
+  border-style: none;
+  margin-right: 0.5rem;
+}
+
+.cityState {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: 'Google Sans', Roboto, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
   text-align: center;
-  padding-top: 12px;
-  border-radius: 16px;
-  border: 2px solid rgb(14, 43, 1);
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
+}
+
+.cityState:hover {
+  background: #f6f9fe;
+  color: #174ea6;
+}
+
+.cityState:active {
+  outline: none;
+}
+
+.cityState:focus {
+  outline: none;
+  border: 2px solid #4285f4;
 }
