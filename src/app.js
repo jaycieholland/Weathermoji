@@ -5,7 +5,7 @@ let currentEmoji;
 
 const getGeo = (city) => {
 	// API URL
-	const base = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api}`;
+	const base = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${api}`;
 
 	// Calling the API
 	fetch(base)
